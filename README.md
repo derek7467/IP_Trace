@@ -1,6 +1,1 @@
-# IP_Trace
-# Trace an IP/Hostname via command line
-# To install the dependencies, see the wiki page!
-# Very small easy to use python script
-# To call this from the command line, make sure to make the python file IPTrace.py executable: chmod +x IPTrace.py
-# Once the above is complete, call it from the command line: python ./IPTrace.py
+IP Trace is a very small python script to trace an IP/hostname to its physical location.  To see what dependencies are required, please see the wiki page.
