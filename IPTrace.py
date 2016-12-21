@@ -3,8 +3,11 @@
 import pygeoip
 import socket
 
-hostip = raw_input('What is the IP or Hostname to trace? ') target = socket.gethostbyname(hostip)
-query = pygeoip.GeoIP("GeoLiteCity.dat") results = query.record_by_addr(target)
+hostip = raw_input('What is the IP or Hostname to trace? ')
+target = socket.gethostbyname(hostip)
+
+query = pygeoip.GeoIP("GeoLiteCity.dat")
+results = query.record_by_addr(target)
 
 with open(hostip + "_Trace.txt", "w") as file:
 	file.write("[*] Query Results: \n\n")
